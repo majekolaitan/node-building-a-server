@@ -8,6 +8,7 @@ app.use(bodyParser.json());
 
 app.post('/profile', (req, res) => {
 	console.log(req.body)
+	res.send('Success');
 });
 
 app.listen(3000);
