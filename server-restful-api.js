@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 
 app.get('/:id', (req, res) => {
 	console.log(req.params)
-	res.send("getting root");
+	res.status(404).send("not found");
 });
 
 app.listen(3000);
