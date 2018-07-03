@@ -18,8 +18,16 @@ console.log('2 - readFileSync', file.toString());
 })*/
 
 // WRITE
-fs.writeFile('./public/newFile.txt', ' Sad to see you go', err => {
+/*fs.writeFile('./public/newFile.txt', ' Sad to see you go', err => {
 	if (err) {
 		console.log(err)
 	}
+})*/
+
+// DELETE
+fs.unlink('./public/newFile.txt', err => {
+	if (err) {
+		console.log(err)
+	}
+	console.log('Deleted')
 })
