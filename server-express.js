@@ -4,7 +4,11 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-	res.send("Hellooooo!");
+	const user = {
+		name: 'Sally',
+		hobby: 'Soccer'
+	}
+	res.send(user);
 });
 
 app.listen(3000);
