@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-	console.log(req.query);
+	console.log(req.headers)
 	res.send("getting root");
 });
 
