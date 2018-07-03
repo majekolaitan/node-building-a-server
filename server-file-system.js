@@ -4,5 +4,8 @@ fs.readFile('./public/hello.txt', (err, data) => {
 	if(err) {
 		console.log('errrrroooooo');
 	}
-	console.log(data.toString());
+	console.log('1 - readFile',data.toString());
 })
+
+const file = fs.readFileSync('./public/hello.txt');
+console.log('2 - readFileSync', file.toString());
